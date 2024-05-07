@@ -12,7 +12,7 @@
                     </div>
                 </div>
             </div>
-            {{-- <livewire:post-data-counter /> --}}
+            <livewire:PostDataCounter />
             <div class="col">
                 <div class="card" style="background-color: #3ade9f; font-size:20px;">
                     <div class="card-body text-center text-white">

@@ -6,7 +6,7 @@
                 <div class="card">
                     <img src="{{ asset('storage/images/' . $post_data->photo) }}" alt="" class="card-img-top">
                     <div class="card-body">
-                        <div class="row my-2">
+                        <div class="row my-3">
                             <div class="col-xl-6">
                                 {{-- here we will pass on which day the post was published --}}
                                 <i class="bi bi-calendar"></i>
@@ -19,7 +19,7 @@
                                 {{-- <livewire:follow-component :followedId="$post_data->user_id" /> --}}
                             </div>
                             {{-- let's shift this div to like component & let's pass post_id to this component --}}
-                            {{-- <livewire:like-component :postId="$post_data->id" /> --}}
+                            <livewire:like-component :postId="$post_data->id" />
                         </div>
                         <h2 class="text-primary">{{ $post_data->post_title }}</h2>
                         <p>{{ $post_data->content }}</p>
